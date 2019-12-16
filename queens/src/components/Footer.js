@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../assets/eye'
+// import logo from '../assets/eye'
 import Nav from '../components/Nav'
 
 function Footer() {
@@ -9,3 +9,5 @@ function Footer() {
         </div>
     )
 }
+
+export default Footer;
