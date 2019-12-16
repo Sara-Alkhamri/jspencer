@@ -12,7 +12,7 @@ function About() {
                     
                 />
                 <p> Jessica Spencer is an Author, Radio host at KPFK 90.7 Los angeles. 
-                    thiswayout.org co-anchor, Realtor and and an AKA
+                    thiswayout.org co-anchor, Realtor and and an AKA.
                 </p>
             </div>
 
@@ -22,6 +22,8 @@ function About() {
                     alt="germaine"
                     src={germaine}
                 />
+                <p> Germaine Nichols was born and raised in Long Beach, California.  
+                    Her upbringing in this vibrant, eclectic community laid the foundation for her development as a positive minded artist and consciously connected woman.</p>
             </div>
         </div>
     )
