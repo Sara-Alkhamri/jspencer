@@ -1,8 +1,5 @@
 import React from 'react';
-import { Link , Route} from 'react-router-dom';
-import About from './About'
-import Podcast from './Podcast'
-import Contact from './Contact'
+import { Link } from 'react-router-dom';
 
 function Nav() {
     return (
@@ -20,10 +17,8 @@ function Nav() {
                 <Link to="/contact" className="nav-item">
                     Contact
                 </Link>
-                {/* <Route path="/" component={Home}/> */}
-        {/* <Route path="/about" component={About}/> 
-        <Route path="/podcast" component={Podcast}/>
-        <Route path="/contact" component={Contact}/> */}
+                
+        
             </div>
         </div>
     )

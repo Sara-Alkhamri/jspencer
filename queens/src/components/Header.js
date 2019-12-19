@@ -1,6 +1,5 @@
 import React from 'react';
 import logo from '../assets/eye.png'
-import Nav from './Nav'
 
 function Header() {
     return (
@@ -12,7 +11,6 @@ function Header() {
             width="100"
             height="50"
             />
-            <Nav />
         </div>
     )
 }
