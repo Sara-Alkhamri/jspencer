@@ -6,8 +6,9 @@ function Contact({ values, errors, touched, isSubmitting }) {
     return (
     <div>
         <h4>We'd love to hear from you! Please share your thoughts using the form below.</h4>
-    
+        
         <Form className="contact-form">
+            
             <Field className="field" component="input" type="text" name="name" placeholder="Enter Name" />
             {touched.name && errors.name && (
                     <p className="error">{errors.name}</p>
@@ -30,9 +31,11 @@ function Contact({ values, errors, touched, isSubmitting }) {
                 {touched.how && errors.how && (
                     <p className="error">{errors.how}</p>
                 )}       
-                <button type="submit" disabled={isSubmitting}>Submit</button>
-       
-        </Form>    
+                <button type="submit" disabled={isSubmitting}>
+                Submit</button>
+                    
+        </Form> 
+          
     </div>    
     )
 }
