@@ -21,9 +21,9 @@ function Nav() {
                     Contact
                 </Link>
                 {/* <Route path="/" component={Home}/> */}
-        <Route path="/about" component={About}/> 
+        {/* <Route path="/about" component={About}/> 
         <Route path="/podcast" component={Podcast}/>
-        <Route path="/contact" component={Contact}/>
+        <Route path="/contact" component={Contact}/> */}
             </div>
         </div>
     )
