@@ -1,8 +1,21 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import axios from 'axios';
 
 function Podcast(props) {
-    return <div>Podcast Page</div>
+    // useEffect(() => {
+    //     axios
+    //     .get('https://api.spotify.com')
+        
+    //     .then(res => (res.data));
+    //     // return () => {
+    //     //     cleanup
+    //     // };
+       
+    // }, [])
+    
+    return <h3>Podcast</h3>
     
 }
 
 export default Podcast;
+
