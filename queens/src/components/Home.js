@@ -15,7 +15,7 @@ const Home = () => {
             height="300"
             />
             <p>Jessica Spencer is an Author, Radio host at KPFK 90.7 Los angeles. 
-                    thiswayout.org co-anchor, Realtor and and an AKA.</p>
+                    thiswayout.org co-anchor, Realtor, and an AKA.</p>
           
         </div>
     )
