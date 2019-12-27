@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <div className="home">
           
-           <h1>Ascended Queens</h1>
+           <h1>Jessica Spencer</h1>
            <img 
             className="geometry"
             alt="geometry"
@@ -14,8 +14,8 @@ const Home = () => {
             width="300"
             height="300"
             />
-            <p>Tune into these 2 dope queens as they discuss spirituality, love, relationships, being queer, 
-                life & of course ascension.</p>
+            <p>Jessica Spencer is an Author, Radio host at KPFK 90.7 Los angeles. 
+                    thiswayout.org co-anchor, Realtor and and an AKA.</p>
           
         </div>
     )
