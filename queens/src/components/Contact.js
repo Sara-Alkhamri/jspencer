@@ -6,7 +6,7 @@ import * as Yup from 'yup';
 function Contact({ values, errors, touched, isSubmitting }) {
     return (
     <div>
-        <h4>We'd love to hear from you! Please share your thoughts using the form below.</h4>
+        <h4>I'd love to hear from you! Please share your thoughts using the form below.</h4>
         
         <Form className="contact-form">
             
@@ -27,7 +27,7 @@ function Contact({ values, errors, touched, isSubmitting }) {
                 <option>How did you find us?</option>
                 <option value="dev">Instegram</option>
                 <option value="ux">Search</option>
-                <option value="tl">Word of mouth</option>
+                <option value="tl">Friend</option>
                 </Field>
                 {touched.how && errors.how && (
                     <p className="error">{errors.how}</p>
