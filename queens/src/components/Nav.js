@@ -11,8 +11,11 @@ function Nav() {
                 <Link to="/about" className="nav-item">
                     About
                 </Link>
-                <Link to="/podcast" className="nav-item">
-                    Podcast
+                <Link to="/podcasts" className="nav-item">
+                    Podcasts
+                </Link>
+                <Link to="/realty" className="nav-item">
+                    Realty
                 </Link>
                 <Link to="/contact" className="nav-item">
                     Contact
