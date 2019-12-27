@@ -24,7 +24,7 @@ function Contact({ values, errors, touched, isSubmitting }) {
                 )} 
 
             <Field className="How" component="select" type="text" name="How">
-                <option>How did you find us?</option>
+                <option>How did you find me?</option>
                 <option value="dev">Instegram</option>
                 <option value="ux">Search</option>
                 <option value="tl">Friend</option>
