@@ -12,7 +12,7 @@ function About() {
                     
                 />
                 <p> Jessica Spencer is an Author, Radio host at KPFK 90.7 Los angeles. 
-                    thiswayout.org co-anchor, Realtor and and an AKA.
+                    thiswayout.org co-anchor, Realtor in the greator Los Angeles area.
                 </p>
             </div>
         </div>
