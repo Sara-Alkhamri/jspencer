@@ -17,7 +17,7 @@ function App() {
       <Header />
       <Route exact path="/" component={Home}/>
       <Route path="/about" component={About}/> 
-      <Route path="/podcast" component={Podcast}/>
+      <Route path="/podcasts" component={Podcast}/>
       <Route path="/realty" component={Realty}/>
       <Route path="/contact" component={Contact}/>
       <Footer />

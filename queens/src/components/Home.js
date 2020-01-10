@@ -14,7 +14,7 @@ const Home = () => {
             height="300"
             />
             <p>Author, Radio host at KPFK 90.7 Los angeles. 
-            thiswayout.org co-anchor, and Realtor.</p>
+            thiswayout.org co-anchor, and Realtor. </p>
         </div>
     )
 }

@@ -7,7 +7,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 ReactDOM.render(
 <Router>
-    <title>Ascended Queens</title>
+    <title>Jessica Spencer</title>
 <App />
 </Router>, document.getElementById('root'));
 
