@@ -28,6 +28,7 @@ function Podcast() {
                     />
 
                     <p>Tune into these dope queens as they discuss spirituality, love, relationships, being queer, life& of course ascension.</p>
+                    
                 <iframe title="intro" src="https://open.spotify.com/embed-podcast/episode/3fHT2V8wRnDMQYVWIqmc8H" width="50%" height="232" 
                 frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe><br></br>
             </div>
