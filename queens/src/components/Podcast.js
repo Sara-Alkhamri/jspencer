@@ -1,5 +1,6 @@
 import React from 'react';
-import jess_bday from '../assets/jess_bday.jpg'
+import jess_bday from '../assets/jess_bday.jpg';
+import germaine from '../assets/germaine.jpeg';
 
 
 
@@ -15,7 +16,15 @@ function Podcast() {
                     alt="jess-bday"
                     src={jess_bday}
                     width="350"
-                    height="300"
+                    height="350"
+                    />
+
+                    <img 
+                    className="germaine"
+                    alt="germaine"
+                    src={germaine}
+                    width="350"
+                    height="350"
                     />
                 <iframe title="intro" src="https://open.spotify.com/embed-podcast/episode/3fHT2V8wRnDMQYVWIqmc8H" width="50%" height="232" 
                 frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe><br></br>
