@@ -1,8 +1,8 @@
 import React from 'react';
-// import {Link} from 'react-router-dom'
 import jess_bday from '../assets/jess_bday.jpg';
 import germaine from '../assets/germaine.jpeg';
 import instagram from '../assets/instagram.png';
+import sacred_geometry from '../assets/sacred_geometry.png'
 
 
 
@@ -49,7 +49,16 @@ function Podcast() {
             </div>
         
         <div className="jewel">
-          {/* IG vids here */}
+          <p>Every Wednesday, I drop some spirituality jewels on you via instagram.</p>
+          <a href="https://www.instagram.com/p/B2kyFVogY-c/">
+            <img 
+                className="jewel-img"
+                alt="jewel-img"
+                src={sacred_geometry}
+                width="350"
+                height="350"
+            />
+          </a>
         </div>    
 
     </div> 

@@ -47,3 +47,10 @@
   opacity: 0.5;
 }
 
+.jewel-img{
+  background: none;
+}
+
+.jewel-img:hover {
+  opacity: 0.5;
+}
