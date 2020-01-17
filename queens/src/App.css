@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.insta-btn {
+  cursor: pointer;
+  text-decoration: none;
+  background: none;
+}
+
+.insta-btn:hover {
+  opacity: 0.5;
+}
+

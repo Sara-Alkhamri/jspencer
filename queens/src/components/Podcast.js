@@ -1,6 +1,8 @@
 import React from 'react';
+// import {Link} from 'react-router-dom'
 import jess_bday from '../assets/jess_bday.jpg';
 import germaine from '../assets/germaine.jpeg';
+import instagram from '../assets/instagram.png';
 
 
 
@@ -28,6 +30,19 @@ function Podcast() {
                     />
 
                     <p>Tune into these dope queens as they discuss spirituality, love, relationships, being queer, life and of course ascension.</p>
+                    
+                    <p>
+                    Follow us on instagram
+                        <a href="https://www.instagram.com/ascendedqueens/">
+                            <img 
+                                className="insta-btn" 
+                                alt="insta-icon"
+                                src={instagram}
+                                width="50"
+                                height="50"
+                            />
+                        </a>
+                    </p>
 
                 <iframe title="intro" src="https://open.spotify.com/embed-podcast/episode/3fHT2V8wRnDMQYVWIqmc8H" width="50%" height="232" 
                 frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe><br></br>
