@@ -67,6 +67,7 @@ function Podcast() {
             <p>This show will provide intriguing and life transforming wisdom regarding the process of ascension or spiritual awakening in a simple and easily understood manner.</p>
             <a href="https://www.blogtalkradio.com/ascended-radio">
             
+            
             </a>
         </div>   
 
