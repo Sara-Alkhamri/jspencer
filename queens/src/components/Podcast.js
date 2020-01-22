@@ -49,6 +49,7 @@ function Podcast() {
             </div>
         
         <div className="jewel">
+        <h3>Jewel Drop Wednesday's</h3> 
           <p>Every Wednesday, I drop some spirituality jewels on you via instagram.</p>
           <a href="https://www.instagram.com/p/B2kyFVogY-c/">
             <img 
@@ -59,7 +60,15 @@ function Podcast() {
                 height="350"
             />
           </a>
-        </div>    
+        </div> 
+
+        <div className="ascended-radio">
+        <h3>Ascended Radio</h3> 
+            <p>This show will provide intriguing and life transforming wisdom regarding the process of ascension or spiritual awakening in a simple and easily understood manner.</p>
+            <a href="https://www.blogtalkradio.com/ascended-radio">
+            
+            </a>
+        </div>   
 
     </div> 
     )
