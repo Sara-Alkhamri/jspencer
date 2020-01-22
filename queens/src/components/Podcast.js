@@ -3,6 +3,7 @@ import jess_bday from '../assets/jess_bday.jpg';
 import germaine from '../assets/germaine.jpeg';
 import instagram from '../assets/instagram.png';
 import sacred_geometry from '../assets/sacred_geometry.png'
+import jessica_2013 from '../assets/jessica_2013.jpeg'
 
 
 
@@ -66,8 +67,13 @@ function Podcast() {
         <h3>Ascended Radio</h3> 
             <p>This show will provide intriguing and life transforming wisdom regarding the process of ascension or spiritual awakening in a simple and easily understood manner.</p>
             <a href="https://www.blogtalkradio.com/ascended-radio">
-            
-            
+            <img 
+                className="jessica_2013"
+                alt="jessica_2013"
+                src={jessica_2013}
+                width="350"
+                height="350"
+            />
             </a>
         </div>   
 
