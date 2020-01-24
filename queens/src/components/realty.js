@@ -4,6 +4,7 @@ import Carousel from 'nuka-carousel';
 function Realty() {
     return (
     <div className="realty">
+       <div className="sold">
         <h2>Licensed Realtor at Keller Williams Realty, Inc.</h2>
         <p>Greator Los Angeles area</p>
         <p>Some of the homes I've sold: </p>
@@ -16,6 +17,12 @@ function Realty() {
             <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide5" alt="placeholder"/>
             <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide6" alt="placeholder"/>
         </Carousel>
+        </div> 
+
+        <div className="for-sale">
+          <h2>Current Listings:</h2>
+           {/* list will be created in the BE    */}
+        </div> 
     </div>
     )
 }
