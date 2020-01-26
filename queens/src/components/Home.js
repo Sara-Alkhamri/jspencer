@@ -4,6 +4,7 @@ import jess_les from '../assets/jess_les.jpg'
 
 const Home = () => {
     return (
+        // add loader
         <div className="home">
            <h1>Jessica Spencer</h1>
            <img 
