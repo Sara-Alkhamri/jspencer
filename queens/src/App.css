@@ -54,3 +54,17 @@
 .jewel-img:hover {
   opacity: 0.5;
 }
+
+.nav-container {
+  
+}
+
+.top-nav {
+  margin: 2rem;
+}
+
+.nav-item {
+  text-decoration: none;
+  padding: 1rem;
+  
+}
