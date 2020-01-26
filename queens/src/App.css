@@ -37,13 +37,28 @@
   }
 }
 
+/* .footer-icons {
+  
+} */
+
 .insta-btn {
+  cursor: pointer;
+  text-decoration: none;
+  background: none;
+  padding-right: 1rem;
+}
+
+.insta-btn:hover {
+  opacity: 0.5;
+}
+
+.linkedin-btn {
   cursor: pointer;
   text-decoration: none;
   background: none;
 }
 
-.insta-btn:hover {
+.linkedin-btn:hover {
   opacity: 0.5;
 }
 
