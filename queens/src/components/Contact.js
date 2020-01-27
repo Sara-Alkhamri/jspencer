@@ -5,25 +5,25 @@ import * as Yup from 'yup';
 
 function Contact({ values, errors, touched, isSubmitting }) {
     return (
-    <div>
+    <div className="contact-container">
         <h4>I'd love to hear from you! Please share your thoughts using the form below.</h4>
         
         <Form className="contact-form">
             
-            <Field className="field" component="input" type="text" name="name" placeholder="Enter Name" />
+            <Field className="form-field" component="input" type="text" name="name" placeholder="Enter Name" />
             {touched.name && errors.name && (
                     <p className="error">{errors.name}</p>
                 )}
-            <Field className="field" component="input" type="text" name="email" placeholder="Enter Email" />
+            <Field className="form-field" component="input" type="text" name="email" placeholder="Enter Email" />
             {touched.email && errors.email && (
                     <p className="error">{errors.email}</p>
                 )}
-            <Field className="field" component="input" type="text" name="message" placeholder="Enter Message" />
+            <Field className="form-field" component="input" type="text" name="message" placeholder="Enter Message" />
             {touched.message && errors.message && (
                     <p className="error">{errors.message}</p>
                 )} 
 
-            <Field className="How" component="select" type="text" name="How">
+            <Field className="form-how" component="select" type="text" name="how">
                 <option>How did you find me?</option>
                 <option value="dev">Instegram</option>
                 <option value="ux">Search</option>
@@ -32,7 +32,7 @@ function Contact({ values, errors, touched, isSubmitting }) {
                 {touched.how && errors.how && (
                     <p className="error">{errors.how}</p>
                 )}       
-                <button type="submit" disabled={isSubmitting}>
+                <button className="submit-btn" type="submit" disabled={isSubmitting}>
                 Submit</button>
                     
         </Form> 
