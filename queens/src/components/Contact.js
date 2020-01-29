@@ -22,8 +22,8 @@ function Contact({ values, errors, touched, isSubmitting }) {
             {touched.message && errors.message && (
                     <p className="error">{errors.message}</p>
                 )} 
-
-            <Field className="form-how" component="select" type="text" name="how">
+{/* Not sure if I want to keep option menu so commenting out for now */}
+            {/* <Field className="form-how" component="select" type="text" name="how">
                 <option>How did you find me?</option>
                 <option value="dev">Instegram</option>
                 <option value="ux">Search</option>
@@ -31,7 +31,8 @@ function Contact({ values, errors, touched, isSubmitting }) {
                 </Field>
                 {touched.how && errors.how && (
                     <p className="error">{errors.how}</p>
-                )}       
+                )}        */}
+
                 <button className="submit-btn" type="submit" disabled={isSubmitting}>
                 Submit</button>
                     
