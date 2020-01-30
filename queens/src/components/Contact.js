@@ -6,10 +6,10 @@ import * as Yup from 'yup';
 function Contact({ values, errors, touched, isSubmitting }) {
     return (
     <div className="contact-container">
-        <h4>I'd love to hear from you! Please share your thoughts using the form below.</h4>
+        <h2>I'm Listining!</h2>
+        <h4>And I'd love to hear from you. Please share your thoughts using the form below!</h4>
         
         <Form className="contact-form">
-            
             <Field className="form-field" component="input" type="text" name="name" placeholder="Enter Name" />
             {touched.name && errors.name && (
                     <p className="error">{errors.name}</p>
