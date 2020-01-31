@@ -6,7 +6,7 @@ import * as Yup from 'yup';
 function Contact({ values, errors, touched, isSubmitting }) {
     return (
     <div className="contact-container">
-        <h2>I'm Listining!</h2>
+        <h2>I'm Listening!</h2>
         <h4>And I'd love to hear from you. Please share your thoughts using the form below!</h4>
         
         <Form className="contact-form">
