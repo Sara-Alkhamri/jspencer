@@ -1,5 +1,37 @@
 {
   "dependencies": {
-    "nuka-carousel": "^4.6.0"
-  }
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.21.2",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.20.8",
+    "nuka-carousel": "^4.6.0",
+    "pg": "^7.18.1",
+    "sqlite3": "^4.1.1"
+  },
+  "name": "asended-queens",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon",  
+	  "start": "node index.js" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sara-Alkhamri/asended-queens.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sara-Alkhamri/asended-queens/issues"
+  },
+  "homepage": "https://github.com/Sara-Alkhamri/asended-queens#readme"
 }
