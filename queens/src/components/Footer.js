@@ -13,8 +13,8 @@ function Footer() {
                             className="insta-btn" 
                             alt="insta-icon"
                             src={instagram}
-                            width="50"
-                            height="50"
+                            width="30"
+                            height="30"
                         />
                 </a>
 
@@ -23,8 +23,8 @@ function Footer() {
                         className="linkedin-btn"
                         alt="linkedin"
                         src={linkedin}
-                        width="50"
-                        height="50"
+                        width="30"
+                        height="30"
                     />
                 </a>
             </div>
