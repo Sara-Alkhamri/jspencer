@@ -12,7 +12,16 @@ import { Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
+    <div className="site-wrap">
+      {/* site-mobile-menu */}
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div> 
       <Nav />
       <Header />
       <Route exact path="/" component={Home}/>
@@ -20,6 +29,7 @@ function App() {
       <Route path="/podcasts" component={Podcast}/>
       <Route path="/realty" component={Realty}/>
       <Route path="/contact" component={Contact}/>
+      
       <Footer />
     </div>
   );
