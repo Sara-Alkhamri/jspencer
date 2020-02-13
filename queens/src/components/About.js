@@ -5,8 +5,8 @@ function About() {
     return  (
         <div className="site-section" id="about-section">
             <div className="container">
-            <div class="row align-items-center">
-            <div class="col-lg-6 mb-5">
+            <div className="row align-items-center">
+            <div className="col-lg-6 mb-5">
                 <img
                     className="img-fluid"
                     alt="jessica"
@@ -15,13 +15,13 @@ function About() {
                 />
                 </div>
 
-            <div class="col-lg-5 ml-auto section-title">    
-            <h2 class="title text-primary mb-3">About me</h2>
+            <div className="col-lg-5 ml-auto section-title">    
+            <h2 className="title text-primary mb-3">About me</h2>
                 <p className="mb-4"> Jessica Spencer is an Author, Radio host at KPFK 90.7 Los angeles. 
                     thiswayout.org co-anchor, Realtor in the greator Los Angeles area.
                 </p>
-                <div class="d-flex">
-                <ul class="list-unstyled ul-check success mr-5">
+                <div className="d-flex">
+                <ul className="list-unstyled ul-check success mr-5">
                 <li>Design</li>
                 <li>Development</li>
                 <li>eCommerce</li>
