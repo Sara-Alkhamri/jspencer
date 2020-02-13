@@ -49,7 +49,6 @@ function Realty() {
                         <img className="img-fluid" src="images/house_6.jpg" alt="house 6"/>
                     </a>
                 </div>
-            
         {/* <div className="for-sale">
           <h2>Current Listings:</h2>
            list will be created in the BE   
