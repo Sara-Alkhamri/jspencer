@@ -1,32 +1,47 @@
 import React from 'react'
-import Nav from '../components/Nav'
-import instagram from '../assets/instagram.png'
-import linkedin from '../assets/linkedin.png'
+// import Nav from '../components/Nav'
+// import instagram from '../assets/instagram.png'
+// import linkedin from '../assets/linkedin.png'
 
 function Footer() {
     return (
-       <div className="footer">
-        {/* <Nav /> */}
-        <div className="footer-icons">
-                <a href="https://www.instagram.com/ascendedqueens/">
+       <div className="site-footer">
+            <div class="container">
+            <div className="row pt-5 mt-5 text-center">
+                <div class="col-md-12">
+                <div class="mb-4">
+                  
+                  <a href="https://twitter.com/Thejspencer" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+                  <a href="https://www.instagram.com/jaspencer08/" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                  <a href="https://www.linkedin.com/in/jessica-spencer-43187148/" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+                </div>
+                {/* <a href="https://www.instagram.com/ascendedqueens/">
                         <img 
-                            className="insta-btn" 
+                            className="icon-instagram" 
                             alt="insta-icon"
                             src={instagram}
                             width="30"
                             height="30"
                         />
-                </a>
+                </a> */}
 
-                <a href="https://www.linkedin.com/in/jessica-spencer-43187148/">
+                {/* <a href="https://www.linkedin.com/in/jessica-spencer-43187148/">
                     <img 
-                        className="linkedin-btn"
+                        className="icon-linkedin"
                         alt="linkedin"
                         src={linkedin}
                         width="30"
                         height="30"
                     />
-                </a>
+                </a> */}
+                <p>
+            {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}
+                 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" rel="noopener noreferrer">Colorlib</a>
+            {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}
+            </p>
+                </div>
+            </div>
+
             </div>
         </div>
 

@@ -1,71 +1,76 @@
 import React from 'react';
-import { Form, Field, withFormik } from 'formik';
-import * as Yup from 'yup';
+// import { withFormik } from 'formik';
+// import * as Yup from 'yup';
 // import axios from 'axios'
 
-function Contact({ values, errors, touched, isSubmitting }) {
+function Contact() {
     return (
-    <div className="contact-container">
-        <h2>I'm Listening!</h2>
-        <h4>And I'd love to hear from you. Please share your thoughts using the form below!</h4>
-        
-        <Form className="contact-form">
-            <Field className="form-field" component="input" type="text" name="name" placeholder="Enter Name" />
-            {touched.name && errors.name && (
-                    <p className="error">{errors.name}</p>
-                )}
-            <Field className="form-field" component="input" type="text" name="email" placeholder="Enter Email" />
-            {touched.email && errors.email && (
-                    <p className="error">{errors.email}</p>
-                )}
-            <Field className="form-field" component="input" type="text" name="message" placeholder="Enter Message" />
-            {touched.message && errors.message && (
-                    <p className="error">{errors.message}</p>
-                )} 
-{/* Not sure if I want to keep option menu so commenting out for now */}
-            {/* <Field className="form-how" component="select" type="text" name="how">
-                <option>How did you find me?</option>
-                <option value="dev">Instegram</option>
-                <option value="ux">Search</option>
-                <option value="tl">Friend</option>
-                </Field>
-                {touched.how && errors.how && (
-                    <p className="error">{errors.how}</p>
-                )}        */}
+    <div className="site-section" id="contact-section">
+      <div className="container">
+        <form action="" className="contact-form">
 
-                <button className="submit-btn" type="submit" disabled={isSubmitting}>
-                Submit</button>
-                    
-        </Form> 
-          
-    </div>    
+          <div className="section-title text-center mb-5">
+            <span className="sub-title mb-2 d-block">Get In Touch</span>
+            <h2 className="title text-primary">Share Your Thoughts</h2>
+          </div>
+
+          <div className="row mb-4">
+            <div className="col-md-6 mb-4 mb-md-0">
+              <input type="text" className="form-control" placeholder="First name"/>
+            </div>
+            <div className="col-md-6">
+              <input type="text" className="form-control" placeholder="Last name"/>
+            </div>
+          </div>
+
+          <div className="row mb-4">
+            <div className="col-12">
+              <input type="text" className="form-control" placeholder="Email"/>
+            </div>
+          </div>
+
+          <div className="row mb-4">
+            <div className="col-12">
+              <textarea className="form-control" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col-12">
+              <button type="submit" className="btn btn-primary btn-md">Send Message</button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
     )
 }
 
-const formikHOC = withFormik ({
-    mapPropsToValues({ name, email, message, how }) {
-        return {
-            name: name || "",
-            email: email || "",
-            message: message || "",
-            how: how || ""
-        };
-    },
+// const formikHOC = withFormik ({
+//     mapPropsToValues({ name, email, message, how }) {
+//         return {
+//             name: name || "",
+//             email: email || "",
+//             message: message || "",
+//             how: how || ""
+//         };
+//     },
 
-    validationSchema: Yup.object().shape({
-        name: Yup.string()
-        .required("Name is required"),
+//     validationSchema: Yup.object().shape({
+//         name: Yup.string()
+//         .required("Name is required"),
 
-        email: Yup.string()
-        .required("Email is required"),
+//         email: Yup.string()
+//         .required("Email is required"),
 
-        message: Yup.string()
-        .required("Message is required"),
+//         message: Yup.string()
+//         .required("Message is required"),
 
-    }),
+//     }),
 
     //Come back to this when it's time for DB work
-    handleSubmit(values, {setStatus, resetForm}) {
+    // handleSubmit(values, {setStatus, resetForm}) {
         // axios
         //     .post("https:localhost:4000/", values)
         //     .then(response => {
@@ -74,10 +79,10 @@ const formikHOC = withFormik ({
         //         resetForm();
         //     })
         //     .catch (error => console.log("handelSubmit: then: error: ", error))
-        resetForm()
-    }
+        // resetForm()
+//     }
         
-})
+// })
 
-const NewFormWithFormik = formikHOC(Contact);
-export default NewFormWithFormik;
+// const NewFormWithFormik = formikHOC(Contact);
+export default Contact;
