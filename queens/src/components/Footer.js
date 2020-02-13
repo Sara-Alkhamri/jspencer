@@ -8,12 +8,12 @@ function Footer() {
        <div className="site-footer">
             <div class="container">
             <div className="row pt-5 mt-5 text-center">
-                <div class="col-md-12">
-                <div class="mb-4">
+                <div className="col-md-12">
+                <div className="mb-4">
                   
-                  <a href="https://twitter.com/Thejspencer" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-                  <a href="https://www.instagram.com/jaspencer08/" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-                  <a href="https://www.linkedin.com/in/jessica-spencer-43187148/" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+                  <a href="https://twitter.com/Thejspencer" className="pl-3 pr-3"><span className="icon-twitter"></span></a>
+                  <a href="https://www.instagram.com/jaspencer08/" className="pl-3 pr-3"><span className="icon-instagram"></span></a>
+                  <a href="https://www.linkedin.com/in/jessica-spencer-43187148/" class="pl-3 pr-3"><span className="icon-linkedin"></span></a>
                 </div>
                 {/* <a href="https://www.instagram.com/ascendedqueens/">
                         <img 
