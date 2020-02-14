@@ -28,8 +28,8 @@ const Home = () => {
                 <div className="col-md-6 ml-auto align-self-center">
                     <div className="intro">
                         <div className="text">
-                            <p className="sub-text mb-5">Author, Radio host at KPFK 90.7 Los angeles. 
-                            thiswayout.org co-anchor, and Realtor. </p>
+                            <p className="sub-text mb-5">Author. Radio host at KPFK 90.7 Los angeles and thiswayout.org.
+                            Podcastor and Realtor. </p>
                         </div>
                     </div>
                 </div>
