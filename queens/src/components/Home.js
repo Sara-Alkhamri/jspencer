@@ -5,7 +5,6 @@ import jess_bday from '../assets/jess_bday.jpg'
 
 const Home = () => {
     return (
-        // add loader
         <div className="site-blocks-cover" id="home-section">
             <div className="img-wrap">
                 <div className="owl-carousel slide-one-item hero-slider">

@@ -13,6 +13,7 @@ function Realty() {
                     <h2 className="title text-primary mb-3">Some of the homes I've sold</h2>
                 </div>
             </div>
+            {/* List of photos will be created in the BE and mapped through. Code below helps with FE design for now. */}
             <div id="posts" class="row no-gutter">
                 <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
                     <a href="images/house_1.jpg" className="item-wrap" data-fancybox="gal">
