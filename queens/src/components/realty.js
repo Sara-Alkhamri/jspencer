@@ -33,7 +33,7 @@ function Realty() {
                         <img className="img-fluid" src="images/house_3.jpg" alt="house 3"/>
                     </a>
                 </div>
-                <div className="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+                {/* <div className="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
                     <a href="images/house_4.jpg" className="item-wrap" data-fancybox="gal">
                         <span className="icon-search2"></span>
                         <img className="img-fluid" src="images/house_4.jpg" alt="house 4"/>
@@ -86,7 +86,7 @@ function Realty() {
                         <span className="icon-search2"></span>
                         <img className="img-fluid" src="images/house_12.jpg" alt="house 12"/>
                     </a>
-                </div>
+                </div> */}
         {/* <div className="for-sale">
           <h2>Current Listings:</h2>
            list will be created in the BE   
