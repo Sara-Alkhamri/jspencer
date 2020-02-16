@@ -11,7 +11,6 @@ function About() {
                     className="img-fluid"
                     alt="jessica"
                     src={jessica}
-                    
                 />
                 </div>
 
@@ -22,16 +21,16 @@ function About() {
                 </p>
                 <div className="d-flex">
                 <ul className="list-unstyled ul-check success mr-5">
-                <li>Design</li>
-                <li>Development</li>
-                <li>eCommerce</li>
+                <li>Author</li>
+                <li>Radio Host</li>
+                <li>Podcastor</li>
                 
               </ul>
               <ul class="list-unstyled ul-check success">
                 
-                <li>Mobile Apps</li>
-                <li>Copywriting</li>
-                <li>SEO</li>
+                <li>Realtor</li>
+                <li>Healer</li>
+                <li>A fool</li>
               </ul>
                     </div>    
                     </div>
