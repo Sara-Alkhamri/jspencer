@@ -6,7 +6,6 @@ import About from './components/About'
 import Podcast from './components/Podcast'
 import Realty from './components/Realty'
 import Contact from './components/Contact'
-import Header from './components/Header'
 import Footer from './components/Footer'
 import { Route } from 'react-router-dom';
 
@@ -23,7 +22,6 @@ function App() {
       <div className="site-mobile-menu-body"></div>
     </div> 
       <Nav />
-      <Header />
       <Route exact path="/" component={Home}/>
       <Route path="/about" component={About}/> 
       <Route path="/podcasts" component={Podcast}/>
