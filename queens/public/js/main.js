@@ -322,7 +322,8 @@ jQuery(document).ready(function($) {
 	  // var $container = $('#posts').isotope({
 	  //   itemSelector : '.item',
 	  //   isFitWidth: true
-	  // });
+		// });
+		
 
 	  $(window).resize(function(){
 	    $container.isotope({
