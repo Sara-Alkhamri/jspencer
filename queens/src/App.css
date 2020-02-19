@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -8,13 +8,13 @@
 
 .top-nav .nav-item:hover {
   opacity: 0.5;
-}
+} */
 
 /* .footer-icons {
   
 } */
 
-.insta-btn {
+/* .insta-btn {
   cursor: pointer;
   text-decoration: none;
   background: none;
@@ -45,13 +45,13 @@
 
 .jessica_2013:hover {
   opacity: 0.5;
-}
+} */
 
 /* .nav-container {
   
 } */
 
-.top-nav {
+/* .top-nav {
   margin: 2rem;
 }
 
@@ -93,7 +93,7 @@
   position: absolute;
   right: 0;
   top: 1;
-} 
+}  */
 
 /* Contact form */
 
@@ -101,20 +101,20 @@
   
 } */
 
-.contact-form {
+/* .contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 3rem;
   
-}
+} */
 
-.form-field {
+/* .form-field {
   margin: 1rem;
-  /* border-radius: 1rem; */
+  border-radius: 1rem;
   width: 20rem;
   height: 2rem;
-}
+} */
 
 /* .form-how {
   width: 20rem;
@@ -122,15 +122,15 @@
   margin: 2rem;
 } */
 
-.submit-btn {
+/* .submit-btn {
   width: 10rem;
-  /* color: white; */
+  color: white;
   font-weight: 100;
   font-size: 1.5rem;
   line-height: 3rem;
   text-align: center;
-  /* background-color: gray;; */
-  /* border-radius: 1rem; */
+  background-color: gray;;
+  border-radius: 1rem;
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
@@ -139,5 +139,7 @@
 .submit-btn:hover{
   opacity: 0.5;
 }
+ */
 
 
+ 

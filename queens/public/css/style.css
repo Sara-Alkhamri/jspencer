@@ -149,7 +149,7 @@ h1, h2, h3, h4, h5, h6 {
   border-top: 1px solid #ced4da !important; }
 
 .site-footer {
-  padding-top: 4rem;
+  padding-top: 10rem;
   padding-bottom: 4rem;
   background: #333333; }
   .site-footer p {
@@ -222,7 +222,7 @@ h1, h2, h3, h4, h5, h6 {
   .site-navbar .site-logo {
     font-weight: 200;
     line-height: 0.7;
-    position: relative;}
+    position: relative; }
     .site-navbar .site-logo a {
       font-weight: 200;
       color: #000;
@@ -731,7 +731,8 @@ h1, h2, h3, h4, h5, h6 {
       transition: .3s all ease-in-out; }
   .item .item-wrap {
     display: block;
-    position: relative; }
+    position: relative; 
+  }
     .item .item-wrap:after {
       z-index: 2;
       position: absolute;

@@ -14,14 +14,14 @@ function Realty() {
                 </div>
             </div>
             {/* List of photos will be created in the BE and mapped through. Code below helps with FE design for now. */}
-            <div id="posts" class="row no-gutter">
-                <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <div id="posts" className="row no-gutter">
+                <div className="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
                     <a href="images/house_1.jpg" className="item-wrap" data-fancybox="gal">
                         <span className="icon-search2"></span>
                         <img className="img-fluid" src="images/house_1.jpg" alt="house 1"/>
                     </a>
                 </div>
-                <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+                <div className="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
                     <a href="images/house_2.jpg" className="item-wrap" data-fancybox="gal">
                         <span className="icon-search2"></span>
                         <img className="img-fluid" src="images/house_2.jpg" alt="house 2"/>
@@ -33,7 +33,7 @@ function Realty() {
                         <img className="img-fluid" src="images/house_3.jpg" alt="house 3"/>
                     </a>
                 </div>
-                {/* <div className="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+                <div className="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
                     <a href="images/house_4.jpg" className="item-wrap" data-fancybox="gal">
                         <span className="icon-search2"></span>
                         <img className="img-fluid" src="images/house_4.jpg" alt="house 4"/>
@@ -51,7 +51,7 @@ function Realty() {
                         <img className="img-fluid" src="images/house_6.jpg" alt="house 6"/>
                     </a>
                 </div>
-                <div className="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+                {/* <div className="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
                     <a href="images/house_7.jpg" className="item-wrap" data-fancybox="gal">
                         <span className="icon-search2"></span>
                         <img className="img-fluid" src="images/house_7.jpg" alt="house 7"/>
