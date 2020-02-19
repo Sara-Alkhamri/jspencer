@@ -2,6 +2,8 @@ const express = require('express') // require the express npm module, needs to b
 const helmet = require('helmet'); //third party middleware for configuring security headers in Node
 const cors = require('cors'); //third party middleware to make it easy to configure CORS in Node
 
+
+//import routes
 // const authRouter = require('./auth/auth-router')
 // const usersRouter = require('./users/users-router')
 
@@ -13,6 +15,8 @@ server.use(helmet()); //tells express to use helmet middleware
 server.use(express.json()); //built-in middleware in express
 server.use(cors()); //tells express to use cors middleware
 
+
+//routes go here
 // server.use('/api/auth', authRouter);
 // server.use('/api/users', usersRouter);
 
