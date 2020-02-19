@@ -1,5 +1,5 @@
 import React from 'react';
-// import Carousel from 'nuka-carousel';
+
 
 function Realty() {
     return (
