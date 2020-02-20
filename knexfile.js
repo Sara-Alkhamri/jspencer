@@ -4,6 +4,7 @@ module.exports = {
 
   development: {
     client: 'sqlite3',
+    //connet to the location of the database
     connection: {
       filename: './dev.sqlite3'
     }
