@@ -7,7 +7,7 @@ function Contact() {
     return (
     <div className="site-section" id="contact-section">
       <div className="container">
-        <form action="" className="contact-form">
+        <form method="post" action="mailto:s.alkhamri@gmail.com" className="contact-form">
 
           <div className="section-title text-center mb-5">
             <span className="sub-title mb-2 d-block">Get In Touch</span>
