@@ -6,8 +6,8 @@ function Realty() {
     <div className="site-section" id="studio-section">
        <div className="container">
 
-            <div class="row mb-5">
-                <div class="col-md-7 section-title text-center mx-auto">
+            <div className="row mb-5">
+                <div className="col-md-7 section-title text-center mx-auto">
                     <h2>Licensed Realtor at Keller Williams Realty, Inc.</h2>
                          <span className="sub-title mb-2 d-block">Greator Los Angeles area</span>
                     <h2 className="title text-primary mb-3">Some of the homes I've sold</h2>
