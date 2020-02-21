@@ -32,7 +32,7 @@ function Podcast() {
                     src={germaine}
                     /> */}
                 </div>
-                <div class="col-lg-5 h-100 jm-sticky-top ml-auto">
+                <div className="col-lg-5 h-100 jm-sticky-top ml-auto">
                     <h3>Acsended Queens</h3>
 
                     <p className="mb-4">Tune into these dope queens as they discuss spirituality, love, relationships, being queer, life and of course ascension.</p>
@@ -54,7 +54,7 @@ function Podcast() {
                 </div>
             </div>
         <div className="row mb-5">
-          <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
+          <div className="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
             <img 
                 className="img-fluid"
                 alt="jewel-img"
