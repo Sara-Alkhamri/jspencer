@@ -20,17 +20,17 @@ function About() {
                     thiswayout.org co-anchor, Realtor in the greator Los Angeles area.
                 </p>
                 <div className="d-flex">
-                <ul className="list-unstyled ul-check success mr-5">
-                <li>Author</li>
-                <li>Radio Host</li>
-                <li>Podcastor</li>
+                    <ul className="list-unstyled ul-check success mr-5">
+                        <li>Author</li>
+                        <li>Radio Host</li>
+                        <li>Podcastor</li>
                 
               </ul>
-              <ul className="list-unstyled ul-check success">
-                <li>Realtor</li>
-                <li>Healer</li>
-                <li>A fool</li>
-              </ul>
+                <ul className="list-unstyled ul-check success">
+                    <li>Realtor</li>
+                    <li>Healer</li>
+                    <li>A fool</li>
+                </ul>
                     </div>    
                     </div>
                 </div>
