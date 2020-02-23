@@ -18,7 +18,6 @@ function Podcast() {
                         <h2 className="title text-primary mb-3">I love sharing my thoughts with you, check out some of my latest podcasts</h2>
                     </div>
                 </div>
-        
             <div className="row mb-5">
                 <div className="col-lg-6 mb-4 mb-lg-0">
                     <img 
@@ -70,7 +69,7 @@ function Podcast() {
             </div> 
        </div>                     
         <div className="row mb-5">
-            <div class="col-lg-6 mb-4 mb-lg-0">
+            <div className="col-lg-6 mb-4 mb-lg-0">
                 <img 
                     className="img-fluid"
                     alt="jessica_2013"
