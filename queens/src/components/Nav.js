@@ -33,7 +33,7 @@ function Nav() {
                                             Contact
                                         </Link>
                                         <Link to="login" className="nav-link">
-                                            Admin login
+                                            Admin
                                         </Link>
                                     </ul>
                                 </div>
