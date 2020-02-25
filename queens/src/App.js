@@ -29,7 +29,6 @@ function App() {
       <Route path="/podcasts" component={Podcast}/>
       <Route path="/realty" component={Realty}/>
       <Route path="/contact" component={Contact}/>
-      
       <Footer />
     </div>
   );
