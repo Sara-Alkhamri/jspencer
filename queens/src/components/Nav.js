@@ -32,6 +32,9 @@ function Nav() {
                                         <Link to="/contact" className="nav-link">
                                             Contact
                                         </Link>
+                                        <Link to="login" className="nav-link">
+                                            Admin login
+                                        </Link>
                                     </ul>
                                 </div>
                             </nav>

@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Nav from './components/Nav'
 import Home from './components/Home'
+import Login from './components/admin/Login'
 import About from './components/About'
 import Podcast from './components/Podcast'
 import Realty from './components/Realty'
@@ -23,6 +24,7 @@ function App() {
     </div> 
       <Nav />
       <Route exact path="/" component={Home}/>
+      <Route exact path="/login" component={Login}/>
       <Route path="/about" component={About}/> 
       <Route path="/podcasts" component={Podcast}/>
       <Route path="/realty" component={Realty}/>

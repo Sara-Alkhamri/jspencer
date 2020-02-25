@@ -6,7 +6,7 @@ import * as Yup from 'yup';
 function Login({touched, errors}) {
     return (
         <Form>
-         <Header>Admin Login</Header> 
+         <h3>Admin Login</h3> 
         <Field type="text" name="username" placeholder="Username" />
         {touched.username && errors.username && (
           <p className="error">{errors.username}</p>)}
@@ -14,7 +14,7 @@ function Login({touched, errors}) {
         <Field type="text" name="password" placeholder="Password" />
         {touched.password && errors.password && <p className="error">{errors.password}</p>}
         
-         <Btn>Login</Btn>
+         <button>Login</button>
       </Form>
     )
 }
@@ -27,13 +27,13 @@ const FormikLogin = withFormik({
       };
     },
     validationSchema: Yup.object().shape({
-      username: Yup.string().required("You must put a username"),
-      password: Yup.string().required("You must put a password")
+      username: Yup.string().required("Required Field"),
+      password: Yup.string().required("Required Field")
     }),
     //You can use this to see the values
     handleSubmit(values, { props, setStatus }) {
       axios
-        .post("https://jspencer-be.herokuapp.com/login", values)
+        .post("https://jspencer-be.herokuapp.com/auth/login", values)
         .then(res => {
           console.log(res.data)
           localStorage.setItem('token', res.data.token);
@@ -43,6 +43,6 @@ const FormikLogin = withFormik({
         .catch(err => console.log(err.res));
     }
   })(Login);
-  // console.log("This is the HOC", FormikLoginForm);
+//   console.log("This is the HOC", FormikLogin);
   
   export default FormikLogin
