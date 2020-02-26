@@ -1,7 +1,23 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 
 function Nav() {
+    // const [isActive, setIsActive] = useState(false);
+
+    function logout(event) {
+        localStorage.removeItem("token");
+      }
+
+      let isAdmin = false;
+      const adminCheck = () => {
+        if (localStorage.getItem("token") !== null) {
+          isAdmin = true;
+        } 
+        return isAdmin;
+      }
+      adminCheck();
+      console.log(isAdmin);  
+
     return (
         <div className="site-navbar-wrap">
             <div className="site-navbar site-navbar-target js-sticky-header">
@@ -32,9 +48,15 @@ function Nav() {
                                         <Link to="/contact" className="nav-link">
                                             Contact
                                         </Link>
-                                        <Link to="login" className="nav-link">
+                                        <Link to="/login" className="nav-link">
                                             Admin
                                         </Link>
+                                        {(isAdmin) ? (
+                                            <Link to="/" onClick={event => logout(event)} className="home-nav-item">
+                                            Logout
+                                            </Link>
+                                            ) : (<Link to="/about" className="home-nav-item">
+                                        </Link> )}
                                     </ul>
                                 </div>
                             </nav>

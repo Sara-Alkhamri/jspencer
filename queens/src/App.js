@@ -3,6 +3,8 @@ import './App.css';
 import Nav from './components/Nav'
 import Home from './components/Home'
 import Login from './components/admin/Login'
+import Dashboard from './components/admin/Dashboard'
+import PrivateRoute from './components/admin/PrivateRoute'
 import About from './components/About'
 import Podcast from './components/Podcast'
 import Realty from './components/Realty'
@@ -25,6 +27,7 @@ function App() {
       <Nav />
       <Route exact path="/" component={Home}/>
       <Route exact path="/login" component={Login}/>
+      <PrivateRoute exact path="/dashboard" component={Dashboard}/>
       <Route path="/about" component={About}/> 
       <Route path="/podcasts" component={Podcast}/>
       <Route path="/realty" component={Realty}/>
