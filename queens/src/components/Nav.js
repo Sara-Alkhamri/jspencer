@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
 function Nav() {
-    // const [isActive, setIsActive] = useState(false);
 
     function logout(event) {
         localStorage.removeItem("token");
