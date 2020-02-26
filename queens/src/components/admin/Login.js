@@ -5,14 +5,13 @@ import * as Yup from 'yup';
 
 const Login = ({touched, errors}) => {
     return (
-        <Form>
+        //The Form component from Formik takes care of the change-handling and state management for the form
+        <Form> 
          <h3>Admin Login</h3> 
-        <label>Username</label> 
         <Field type="text" name="username" placeholder="Username" />
         {touched.username && errors.username && (
           <p className="error">{errors.username}</p>)}
-​         <label>Password</label>
-        <Field type="text" name="password" placeholder="Password" />
+        <Field type="password" name="password" placeholder="Password" />
         {touched.password && errors.password && <p className="error">{errors.password}</p>}
         
          <button type="submit">Login</button>
