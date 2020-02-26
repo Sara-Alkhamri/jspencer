@@ -3,12 +3,12 @@ import axios from 'axios';
 import { withFormik, Form, Field } from "formik";
 import * as Yup from 'yup';
 
-const Login = ({touched, errors}) => {
+function Login({touched, errors}) {
     return (
         //The Form component from Formik takes care of the change-handling and state management for the form
         <Form> 
          <h3>Admin Login</h3> 
-        <Field type="text" name="username" placeholder="Username" />
+        <Field type="email" name="email" placeholder="Email" />
         {touched.username && errors.username && (
           <p className="error">{errors.username}</p>)}
         <Field type="password" name="password" placeholder="Password" />
@@ -19,10 +19,11 @@ const Login = ({touched, errors}) => {
     )
 }
 
+//Wiring the form up with Formik below. We do this by wrapping our login function inside the higher-order Formik component useing withFormik
 const FormikLogin = withFormik({
-    mapPropsToValues({ username, password }) {
+    mapPropsToValues({ email, password }) {
       return {
-        username: username || "",
+        email: email || "",
         password: password || ""
       };
     },
