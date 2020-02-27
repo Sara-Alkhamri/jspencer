@@ -7,24 +7,35 @@ function Login({touched, errors}) {
 
     return (
         //The Form component from Formik takes care of the change-handling and state management for the form
-        <Form> 
-         <h3 className="title text-primary">Admin Login</h3> 
-        <Field 
-            type="username" 
-            name="username" 
-            placeholder="username"
-         />
-        {touched.username && errors.username && ( <p className="error">{errors.username}</p>)}
-
-        <Field 
-            type="password" 
-            name="password" 
-            placeholder="Password" 
-        />
-        {touched.password && errors.password && <p className="error">{errors.password}</p>}
-        
-         <button type="submit">Login</button>
-      </Form>
+      <div className="site-section" id="contact-section"> 
+          <div className="container">
+            <Form className="contact-form"> 
+                <h3 className="sub-title mb-2 d-block">Admin Login</h3> 
+                <div className="row mb-4">
+                    <div className="col-md-6 mb-4 mb-md-0">
+                        <Field 
+                            type="username" 
+                            name="username" 
+                            placeholder="username"
+                            className="form-control"
+                        />
+                
+                        {touched.username && errors.username && ( <p className="text-primary">{errors.username}</p>)}
+                    </div>  
+                    <div className="col-md-6">
+                        <Field 
+                            type="password" 
+                            name="password" 
+                            placeholder="Password" 
+                            className="form-control"
+                        />
+                        {touched.password && errors.password && <p className="title text-primary">{errors.password}</p>}
+                    </div>  
+                </div>
+                <button type="submit" className="btn btn-primary btn-md">Login</button>
+            </Form>
+        </div>
+      </div> 
     )
 }
 
