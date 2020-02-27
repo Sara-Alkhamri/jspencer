@@ -8,7 +8,7 @@ function Login({touched, errors}) {
     return (
         //The Form component from Formik takes care of the change-handling and state management for the form
         <Form> 
-         <h3>Admin Login</h3> 
+         <h3 className="title text-primary">Admin Login</h3> 
         <Field 
             type="username" 
             name="username" 
