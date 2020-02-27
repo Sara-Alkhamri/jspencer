@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Nav() {
-
-    function logout(event) {
+    function logout() {
         localStorage.removeItem("token");
       }
 
@@ -15,8 +14,9 @@ function Nav() {
         return isAdmin;
       }
       adminCheck();
-      console.log(isAdmin);  
-
+      console.log(isAdmin);
+   
+    
     return (
         <div className="site-navbar-wrap">
             <div className="site-navbar site-navbar-target js-sticky-header">
@@ -51,11 +51,15 @@ function Nav() {
                                             Admin
                                         </Link>
                                         {(isAdmin) ? (
-                                            <Link to="/" onClick={event => logout(event)} className="home-nav-item">
-                                            Logout
+                                        <Link to="/" onClick={event => logout(event)} className="home-nav-item">
+                                                Logout
                                             </Link>
-                                            ) : (<Link to="/about" className="home-nav-item">
-                                        </Link> )}
+                                            ) : (<Link to="/" className="home-nav-item">
+                                        </Link> )} 
+            
+                                
+                                    
+                
                                     </ul>
                                 </div>
                             </nav>
