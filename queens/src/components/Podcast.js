@@ -12,7 +12,7 @@ function Podcast() {
     return (
         <div className="site-section" id="portfolio-section">
             <div className="container">
-                <div className="row mb-5 ">
+                <div className="row mb-5">
                     <div className="col-md-7 section-title text-center mx-auto">
                         <span className="sub-title mb-2 d-block">Recent Podcasts</span>
                         <h2 className="title text-primary mb-3">I love sharing my thoughts with you, check out some of my latest podcasts</h2>
