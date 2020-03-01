@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
 
 function Realty() {
+
+
+
+
+
+
+
+
     return (
     <div className="site-section" id="studio-section">
        <div className="container">
