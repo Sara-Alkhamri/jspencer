@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+import RealtyCard from './RealtyCard';
+
 
 function Realty() {
     const [house, setHouse] = useState();
