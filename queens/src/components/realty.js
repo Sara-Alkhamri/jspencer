@@ -3,13 +3,23 @@ import axios from 'axios';
 
 
 function Realty() {
+    const [house, setHouse] = useState();
 
+    const getHouse = () => {
+        axios
+            .get(
+                'https://jspencer-be.herokuapp.com/realty/'
+            )
+            .then(res => {
+                console.log(res, 'res')
+                setHouse(res.data)
+            })
+            .catch(err => console.log(err.res))
+    };
 
-
-
-
-
-
+    useEffect(() => {
+        getHouse();
+    }, [])
 
     return (
     <div className="site-section" id="studio-section">

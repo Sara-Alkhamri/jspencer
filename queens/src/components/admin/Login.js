@@ -55,7 +55,7 @@ const FormikLogin = withFormik({
     }),
     //You can use this to see the values
     handleSubmit(values, { props, resetForm }) {
-        // console.log(values)
+        console.log(props)
      axios
         .post("https://jspencer-be.herokuapp.com/auth/login", values)
         .then(res => {
