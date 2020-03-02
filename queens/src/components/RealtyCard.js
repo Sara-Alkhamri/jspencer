@@ -1,9 +1,12 @@
 import React from 'react';
 
 const RealtyCard = (props) => {
+    console.log(props)
     return (
        <div>
-           <img>{props.image}</img>
+           <div key={props.id} id={props.id}>
+           <img src={props.image}/>
+           </div>
        </div> 
     )
 }
