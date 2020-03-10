@@ -31,7 +31,7 @@ function App() {
       <Route path="/about" component={About}/> 
       <Route path="/podcasts" component={Podcast}/>
       <Route path="/realty" component={Realty}/>
-      <Route path="/contact" component={Contact}/>
+      {/* <Route path="/contact/message" render={props => <Contact {...props} />} /> */}
       <Footer />
     </div>
   );
