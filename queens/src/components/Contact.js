@@ -62,7 +62,7 @@ function Contact() {
         </form>
       </div>
     </div>
-    )
+  )
 }
 
 const formikHOC = withFormik ({
@@ -101,8 +101,7 @@ const formikHOC = withFormik ({
             })
             .catch (error => console.log("handelSubmit: then: error: ", error))
         resetForm()
-    }
-        
+    }    
 })(Contact);
 
 
