@@ -1,13 +1,13 @@
 import React from 'react';
-// import { withFormik } from 'formik';
-// import * as Yup from 'yup';
-// import axios from 'axios'
+import { withFormik } from 'formik';
+import * as Yup from 'yup';
+import axios from 'axios'
 
 function Contact() {
     return (
     <div className="site-section" id="contact-section">
       <div className="container">
-        <form method="post" action="mailto:s.alkhamri@gmail.com" className="contact-form">
+        <form method="post" className="contact-form">
 
           <div className="section-title text-center mb-5">
             <span className="sub-title mb-2 d-block">Get In Touch</span>
@@ -16,22 +16,40 @@ function Contact() {
 
           <div className="row mb-4">
             <div className="col-md-6 mb-4 mb-md-0">
-              <input type="text" className="form-control" placeholder="First name"/>
+              <input 
+              type="text" 
+              className="form-control" 
+              placeholder="First name"
+              />
             </div>
             <div className="col-md-6">
-              <input type="text" className="form-control" placeholder="Last name"/>
+              <input 
+              type="text" 
+              name="firstName"
+              className="form-control" 
+              placeholder="Last name"
+              />
             </div>
           </div>
 
           <div className="row mb-4">
             <div className="col-12">
-              <input type="text" className="form-control" placeholder="Email"/>
+              <input 
+              type="text" 
+              name="lastName"
+              className="form-control" 
+              placeholder="Email"/>
             </div>
           </div>
 
           <div className="row mb-4">
             <div className="col-12">
-              <textarea className="form-control" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+              <textarea 
+              className="form-control" 
+              name="message" 
+              id="" cols="30" rows="10" 
+              placeholder="Message">
+              </textarea>
             </div>
           </div>
 
@@ -47,42 +65,45 @@ function Contact() {
     )
 }
 
-// const formikHOC = withFormik ({
-//     mapPropsToValues({ name, email, message, how }) {
-//         return {
-//             name: name || "",
-//             email: email || "",
-//             message: message || "",
-//             how: how || ""
-//         };
-//     },
+const formikHOC = withFormik ({
+    mapPropsToValues({ firstName, lastName, email, message }) {
+        return {
+            firstName: firstName || "",
+            lastName: lastName || "",
+            email: email || "",
+            message: message || "",
+        };
+    },
 
-//     validationSchema: Yup.object().shape({
-//         name: Yup.string()
-//         .required("Name is required"),
+    validationSchema: Yup.object().shape({
+        firstName: Yup.string()
+        .required("First name is required"),
+      
+        lastName: Yup.string()
+        .required("Last name is required"),
 
-//         email: Yup.string()
-//         .required("Email is required"),
+        email: Yup.string()
+        .required("Email is required"),
 
-//         message: Yup.string()
-//         .required("Message is required"),
+        message: Yup.string()
+        .required("Message is required"),
 
-//     }),
+    }),
 
     //Come back to this when it's time for DB work
-    // handleSubmit(values, {setStatus, resetForm}) {
-        // axios
-        //     .post("https:localhost:4000/", values)
-        //     .then(response => {
-        //         console.log("handelSubmit: then: response: ", response);
-        //         setStatus(response.data);
-        //         resetForm();
-        //     })
-        //     .catch (error => console.log("handelSubmit: then: error: ", error))
-        // resetForm()
-//     }
+    handleSubmit(values, {setStatus, resetForm}) {
+        axios
+            .post("https://jspencer-be.herokuapp.com/contact", values)
+            .then(response => {
+                console.log("handelSubmit: then: response: ", response);
+                setStatus(response.data);
+                resetForm();
+            })
+            .catch (error => console.log("handelSubmit: then: error: ", error))
+        resetForm()
+    }
         
-// })
+})(Contact);
 
-// const NewFormWithFormik = formikHOC(Contact);
-export default Contact;
+
+export default formikHOC;
