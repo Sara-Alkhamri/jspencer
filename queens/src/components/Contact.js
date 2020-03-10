@@ -91,16 +91,18 @@ const formikHOC = withFormik ({
     }),
 
     //Come back to this when it's time for DB work
-    handleSubmit(values, {setStatus, resetForm}) {
+    handleSubmit(values, {props, setStatus, resetForm}) {
+      console.log(props)
         axios
-            .post("https://jspencer-be.herokuapp.com/contact", values)
-            .then(response => {
-                console.log("handelSubmit: then: response: ", response);
-                setStatus(response.data);
+            .post("https://jspencer-be.herokuapp.com/contact/message", values)
+            .then(res => {
+              console.log(res.data)
+                // console.log("handelSubmit: then: response: ", response);
+                setStatus(res.data);
+                props.history.push('/dashboard');
                 resetForm();
             })
             .catch (error => console.log("handelSubmit: then: error: ", error))
-        resetForm()
     }    
 })(Contact);
 
