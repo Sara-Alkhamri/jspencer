@@ -77,13 +77,13 @@ function Realty() {
                         <img className="img-fluid" src="images/house_6.jpg" alt="house 6"/>
                     </a>
                 </div> 
-                {/* <div className="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+                <div className="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
                     <a href="images/house_7.jpg" className="item-wrap" data-fancybox="gal">
                         <span className="icon-search2"></span>
                         <img className="img-fluid" src="images/house_7.jpg" alt="house 7"/>
                     </a>
                 </div>
-                <div className="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+                {/* <div className="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
                     <a href="images/house_8.jpg" className="item-wrap" data-fancybox="gal">
                         <span className="icon-search2"></span>
                         <img className="img-fluid" src="images/house_8.jpg" alt="house 8"/>
