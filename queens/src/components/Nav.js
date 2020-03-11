@@ -47,9 +47,9 @@ function Nav() {
                                         <Link to="/contact" className="nav-link">
                                             Contact
                                         </Link>
-                                        {/* <Link to="/login" className="nav-link">
+                                        <Link to="/login" className="nav-link">
                                             Admin
-                                        </Link> */}
+                                        </Link>
                                         {/* {(isAdmin) ? (
                                         <Link to="/" onClick={event => logout(event)} className="home-nav-item">
                                                 Logout
