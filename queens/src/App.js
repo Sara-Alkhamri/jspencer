@@ -11,6 +11,7 @@ import Realty from './components/Realty'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import { Route } from 'react-router-dom';
+import ContactConfirmation from './components/admin/ContactConfirmation';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
       <Route path="/podcasts" component={Podcast}/>
       <Route path="/realty" component={Realty}/>
       <Route path="/contact" render={props => <Contact {...props} />} />
+      <Route path="/contact-confirmation" component={ContactConfirmation} />
       <Footer />
     </div>
   );
