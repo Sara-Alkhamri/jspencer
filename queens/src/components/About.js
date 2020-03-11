@@ -29,7 +29,7 @@ function About() {
                 <ul className="list-unstyled ul-check success">
                     <li>Realtor</li>
                     <li>Healer</li>
-                    <li>A fool</li>
+                    <li>A fool :)</li>
                 </ul>
                     </div>    
                     </div>
