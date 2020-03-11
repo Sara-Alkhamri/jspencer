@@ -52,7 +52,7 @@ function Nav() {
                                         </Link>
                                         {(isAdmin) ? (
                                         <Link to="/" onClick={event => logout(event)} className="home-nav-item">
-                                                Logout
+                                                {/* Logout */}
                                             </Link>
                                             ) : (<Link to="/" className="home-nav-item">
                                         </Link> )} 

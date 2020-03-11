@@ -29,11 +29,11 @@ function App() {
       <Route exact path="/" component={Home}/>
       <Route exact path="/login" component={Login}/>
       <PrivateRoute exact path="/dashboard" component={Dashboard}/>
+      <Route path="/contact" component={Contact} />
+      <Route path="/contact-confirmation" component={ContactConfirmation} />
       <Route path="/about" component={About}/> 
       <Route path="/podcasts" component={Podcast}/>
       <Route path="/realty" component={Realty}/>
-      <Route path="/contact" render={props => <Contact {...props} />} />
-      <Route path="/contact-confirmation" component={ContactConfirmation} />
       <Footer />
     </div>
   );

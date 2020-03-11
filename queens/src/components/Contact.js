@@ -94,7 +94,7 @@ const formikHOC = withFormik ({
     handleSubmit(values, {props, setStatus, resetForm}) {
       console.log(props)
         axios
-            .post("https://jspencer-be.herokuapp.com/contact/message", values)
+            .post("https://jspencer-be.herokuapp.com/contact/submit", values)
             .then(res => {
               console.log(res.data)
                 // console.log("handelSubmit: then: response: ", response);
