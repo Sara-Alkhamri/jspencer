@@ -99,7 +99,7 @@ const formikHOC = withFormik ({
               console.log(res.data)
                 // console.log("handelSubmit: then: response: ", response);
                 setStatus(res.data);
-                props.history.push('/');
+                props.history.push('/contact-confirmation');
                 resetForm();
             })
             .catch (error => console.log("handelSubmit: then: error: ", error))

@@ -56,10 +56,6 @@ function Nav() {
                                             </Link>
                                             ) : (<Link to="/" className="home-nav-item">
                                         </Link> )} 
-            
-                                
-                                    
-                
                                     </ul>
                                 </div>
                             </nav>
