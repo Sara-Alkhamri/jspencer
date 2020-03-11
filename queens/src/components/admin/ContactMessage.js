@@ -24,10 +24,12 @@ return (
     <div className="site-section" id="contact-section">
         <div className="container">
             {/* <h3 className="title text-primary mb-3">New Messages to Review:</h3> */}
+           
             { (message.length > 0) ? (message.map(msg => (
                 <ContactCard key={msg.id} id={msg.id} firstName={msg.firstName} lastName={msg.lastName} email={msg.email} message={msg.message}/>))) : (<p>There are no new messages at this time</p>)
 
             }
+          
         </div>
     </div>
 )
