@@ -2,19 +2,19 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Nav() {
-    function logout() {
-        localStorage.removeItem("token");
-      }
+    // function logout() {
+    //     localStorage.removeItem("token");
+    //   }
 
-      let isAdmin = false;
-      const adminCheck = () => {
-        if (localStorage.getItem("token") !== null) {
-          isAdmin = true;
-        } 
-        return isAdmin;
-      }
-      adminCheck();
-      console.log(isAdmin);
+    //   let isAdmin = false;
+    //   const adminCheck = () => {
+    //     if (localStorage.getItem("token") !== null) {
+    //       isAdmin = true;
+    //     } 
+    //     return isAdmin;
+    //   }
+    //   adminCheck();
+    //   console.log(isAdmin);
    
     
     return (
@@ -47,15 +47,15 @@ function Nav() {
                                         <Link to="/contact" className="nav-link">
                                             Contact
                                         </Link>
-                                        <Link to="/login" className="nav-link">
+                                        {/* <Link to="/login" className="nav-link">
                                             Admin
-                                        </Link>
-                                        {(isAdmin) ? (
+                                        </Link> */}
+                                        {/* {(isAdmin) ? (
                                         <Link to="/" onClick={event => logout(event)} className="home-nav-item">
-                                                {/* Logout */}
+                                                Logout
                                             </Link>
                                             ) : (<Link to="/" className="home-nav-item">
-                                        </Link> )} 
+                                        </Link> )}  */}
                                     </ul>
                                 </div>
                             </nav>
