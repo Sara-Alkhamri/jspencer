@@ -7,10 +7,11 @@ const MessagesToReview = () => {
 
     const getMessage = () => {
         axios
-        .get('https://jspencer-be.herokuapp.com/contact/')
+        .get('https://jspencer-be.herokuapp.com/contact')
         .then(res => {
             console.log(res);
-            setMessage(res.data);
+            localStorage.setItem('token', res.data.token);
+            // setMessage(res.data);
         })
         .catch(err => console.log(err.res))
 
