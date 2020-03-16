@@ -12,7 +12,7 @@ function Footer() {
                             <a href="https://www.instagram.com/jaspencer08/" className="pl-3 pr-3"><span className="icon-instagram"></span></a>
                             <a href="https://www.linkedin.com/in/jessica-spencer-43187148/" className="pl-3 pr-3"><span className="icon-linkedin"></span></a>
                             
-                            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Design made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a></p>
+                            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Design made with <i className="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a></p>
                         </div>
                     </div>
                 </div>

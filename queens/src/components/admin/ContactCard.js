@@ -1,6 +1,7 @@
 import React from 'react';
 
 const ContactCard = props => {
+    console.log(props)
 
     return (
         <div className="section-title text-center mb-5">
