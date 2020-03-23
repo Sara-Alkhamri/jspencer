@@ -1,10 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 function Nav() {
-    // function logout() {
-    //     localStorage.removeItem("token");
-    //   }
+    
 
     //   let isAdmin = false;
     //   const adminCheck = () => {
@@ -32,24 +30,33 @@ function Nav() {
                                 <span className="icon-menu h3"></span> <span className="menu-text">Menu</span>
                                 </a></div>
                             <ul className="site-menu main-menu js-clone-nav d-none d-lg-none">
-                                        <Link to="/" className="nav-link">
+                                        <NavLink to="/" className="nav-link">
                                             Home
-                                        </Link>
-                                        <Link to="/about" className="nav-link">
+                                        </NavLink>
+                                        <NavLink to="/about" className="nav-link">
                                             About
-                                        </Link>
-                                        <Link to="/podcasts" className="nav-link">
+                                        </NavLink>
+                                        <NavLink to="/podcasts" className="nav-link">
                                             Podcasts
-                                        </Link>
-                                        <Link to="/realty" className="nav-link">
+                                        </NavLink>
+                                        <NavLink to="/realty" className="nav-link">
                                             Realty
-                                        </Link>
-                                        <Link to="/contact" className="nav-link">
+                                        </NavLink>
+                                        <NavLink to="/contact" className="nav-link">
                                             Contact
-                                        </Link>
-                                        <Link to="/login" className="nav-link">
+                                        </NavLink>
+                                        {/* <Link to="/contact/submit" className="nav-link">
+                                            Contact
+                                        </Link> */}
+                                        <NavLink to="/login" className="nav-link">
                                             Admin
-                                        </Link>
+                                        </NavLink>
+                                        {/* {(isAdmin) ? (
+                                        <NavLink to="/dashboard" className="nav-link">
+                                            Admin
+                                        </NavLink>) : (<NavLink to="/login" className="nav-link">
+                                        </NavLink>)} */}
+                                        
                                         {/* {(isAdmin) ? (
                                         <Link to="/" onClick={event => logout(event)} className="home-nav-item">
                                                 Logout

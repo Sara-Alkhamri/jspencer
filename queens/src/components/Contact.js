@@ -4,6 +4,7 @@ import * as Yup from 'yup';
 import axios from 'axios'
 
 function Contact() {
+
     return (
     <div className="site-section" id="contact-section">
       <div className="container">
@@ -63,6 +64,8 @@ function Contact() {
       </div>
     </div>
   )
+
+  
 }
 
 const formikHOC = withFormik ({
@@ -91,19 +94,22 @@ const formikHOC = withFormik ({
     }),
 
     //Come back to this when it's time for DB work
-    handleSubmit(values, {props, setStatus, resetForm}) {
+    handleSubmit(values, {props, resetForm}) {
       console.log(props)
         axios
-            .post("https://jspencer-be.herokuapp.com/contact/submit", values)
+            .post('https://jspencer-be.herokuapp.com/contact/submit', values)
             .then(res => {
               console.log(res.data)
                 // console.log("handelSubmit: then: response: ", response);
-                setStatus(res.data);
+                // setStatus(res.data);
                 props.history.push('/contact-confirmation');
                 resetForm();
             })
             .catch (error => console.log("handelSubmit: then: error: ", error))
     }    
+
+    
+
 })(Contact);
 
 

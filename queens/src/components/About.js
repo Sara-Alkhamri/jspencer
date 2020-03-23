@@ -24,12 +24,10 @@ function About() {
                         <li>Author</li>
                         <li>Radio Host</li>
                         <li>Podcastor</li>
-                
-              </ul>
+                    </ul>
                 <ul className="list-unstyled ul-check success">
                     <li>Realtor</li>
                     <li>Healer</li>
-                    <li>A fool :)</li>
                 </ul>
                     </div>    
                     </div>
