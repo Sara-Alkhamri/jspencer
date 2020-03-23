@@ -10,7 +10,6 @@ const MessagesToReview = () => {
         .get('https://jspencer-be.herokuapp.com/contact/')
         .then(res => {
             console.log(res);
-            localStorage.setItem('token', res.data.token);
             setMessages(res.data);
         })
         .catch(err => console.log(err.res))

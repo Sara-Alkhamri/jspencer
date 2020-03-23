@@ -8,7 +8,7 @@ const ContactCard = props => {
             <h2>From: {props.firstName} {props.lastName}</h2>
             <p>Email: {props.email}</p>
             <p>Message: {props.message}</p>
-        
+            <button onClick={() => props.delete(props.id)}>Delete</button>
         </div>
     )
 
