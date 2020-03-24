@@ -25,7 +25,7 @@ const MessagesToReview = () => {
         .delete(`https://jspencer-be.herokuapp.com/contact/delete/${id}`)
         .then(res => {
             console.log('Delete', res)
-            getMessage()
+            getMessage() //updates messages
         })
         .catch(err => console.log(err.res))
     }
@@ -37,7 +37,6 @@ return (
                 <ContactCard key={msg.id} id={msg.id} firstName={msg.firstName} lastName={msg.lastName} email={msg.email} message={msg.message} delete={deleteMessage}/>))) : (<p>There are no new messages at this time</p>)
 
             }
-          
         </div>
     </div>
 )

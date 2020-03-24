@@ -64,8 +64,6 @@ function Contact() {
       </div>
     </div>
   )
-
-  
 }
 
 const formikHOC = withFormik ({
