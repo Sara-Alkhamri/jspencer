@@ -66,7 +66,7 @@ function Contact() {
   )
 }
 
-const formikHOC = withFormik ({
+const FormikContact = withFormik ({
     mapPropsToValues({ firstName, lastName, email, message }) {
         return {
             firstName: firstName || "",
@@ -95,7 +95,7 @@ const formikHOC = withFormik ({
     handleSubmit(values, {props, resetForm}) {
       console.log(props)
         axios
-            .post('https://jspencer-be.herokuapp.com/contact/submit', values)
+            .post('https://jspencer-be.herokuapp.com/contact', values)
             .then(res => {
               console.log(res.data)
                 // console.log("handelSubmit: then: response: ", response);
@@ -111,4 +111,4 @@ const formikHOC = withFormik ({
 })(Contact);
 
 
-export default formikHOC;
+export default FormikContact;
