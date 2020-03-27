@@ -1,9 +1,9 @@
 import React from 'react';
 import { withFormik } from 'formik';
 import * as Yup from 'yup';
-import axios from 'axios'
+import axios from 'axios';
 
-function Contact() {
+const Contact = () => {
 
     return (
     <div className="site-section" id="contact-section">
@@ -19,6 +19,7 @@ function Contact() {
             <div className="col-md-6 mb-4 mb-md-0">
               <input 
               type="text" 
+              name="firstname"
               className="form-control" 
               placeholder="First name"
               />
@@ -26,7 +27,7 @@ function Contact() {
             <div className="col-md-6">
               <input 
               type="text" 
-              name="firstName"
+              name="lastName"
               className="form-control" 
               placeholder="Last name"
               />
@@ -37,9 +38,10 @@ function Contact() {
             <div className="col-12">
               <input 
               type="text" 
-              name="lastName"
+              name="email"
               className="form-control" 
-              placeholder="Email"/>
+              placeholder="Email"
+              />
             </div>
           </div>
 
@@ -95,12 +97,12 @@ const FormikContact = withFormik ({
     handleSubmit(values, {props, resetForm}) {
       console.log(props)
         axios
-            .post('https://jspencer-be.herokuapp.com/contact', values)
+            .post("https://jspencer-be.herokuapp.com/contact", values)
             .then(res => {
               console.log(res.data)
                 // console.log("handelSubmit: then: response: ", response);
                 // setStatus(res.data);
-                props.history.push('/contact-confirmation');
+                props.history.push("/contact-confirmation");
                 resetForm();
             })
             .catch (error => console.log("handelSubmit: then: error: ", error))

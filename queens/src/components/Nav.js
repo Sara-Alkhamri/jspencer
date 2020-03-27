@@ -42,9 +42,9 @@ function Nav() {
                                         <NavLink to="/realty" className="nav-link">
                                             Realty
                                         </NavLink>
-                                        <NavLink to="/contact" className="nav-link">
+                                        <Link to="/contact" className="nav-link">
                                             Contact
-                                        </NavLink>
+                                        </Link>
                                         {/* <Link to="/contact/submit" className="nav-link">
                                             Contact
                                         </Link> */}
