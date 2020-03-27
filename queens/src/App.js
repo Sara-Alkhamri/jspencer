@@ -9,7 +9,6 @@ import About from './components/About'
 import Podcast from './components/Podcast'
 import Realty from './components/Realty'
 import Contact from './components/Contact'
-import ContactMessage from './components/admin/ContactMessage'
 import Footer from './components/Footer'
 import { Route } from 'react-router-dom';
 import ContactConfirmation from './components/admin/ContactConfirmation';
@@ -31,7 +30,6 @@ function App() {
       <Route exact path="/login" component={Login}/>
       <PrivateRoute exact path="/dashboard" component={Dashboard}/>
       
-      {/* <PrivateRoute path="/contact" component={ContactMessage} /> */}
       <Route 
         path="/contact" component={Contact} />
       <Route exact path="/contact-confirmation" component={ContactConfirmation} />
