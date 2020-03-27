@@ -7,7 +7,7 @@ import Dashboard from './components/admin/Dashboard'
 import PrivateRoute from './components/admin/PrivateRoute'
 import About from './components/About'
 import Podcast from './components/Podcast'
-import Realty from './components/Realty'
+import Realty from './components/realty'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import { Route } from 'react-router-dom';
