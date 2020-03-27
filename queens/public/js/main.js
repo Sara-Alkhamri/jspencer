@@ -319,10 +319,10 @@ jQuery(document).ready(function($) {
 
   var siteIstotope = function() {
   	/* activate jquery isotope */
-	  // var $container = $('#posts').isotope({
-	  //   itemSelector : '.item',
-	  //   isFitWidth: true
-		// });
+	var $container = $('#posts').isotope({
+	    itemSelector : '.item',
+	    isFitWidth: true
+		 });
 		
 
 	  $(window).resize(function(){
