@@ -21,12 +21,12 @@ function Nav() {
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-6 col-md-4">
-                            <h1 className="my-0 site-logo"><a href="index.html">Jessica Spencer<span className="text-primary">.</span> </a></h1>
+                            <h1 className="my-0 site-logo"><a href="/">Jessica Spencer<span className="text-primary">.</span> </a></h1>
                          </div>
                          <div className="col-6 col-md-8">
                          <nav className="site-navigation text-right" role="navigation">
                          <div className="container">
-                            <div className="d-inline-block d-lg-block ml-md-0 mr-auto py-3"><a href="#" className="site-menu-toggle js-menu-toggle text-black">
+                            <div className="d-inline-block d-lg-block ml-md-0 mr-auto py-3"><a href="/home" className="site-menu-toggle js-menu-toggle text-black">
                                 <span className="icon-menu h3"></span> <span className="menu-text">Menu</span>
                                 </a></div>
                             <ul className="site-menu main-menu js-clone-nav d-none d-lg-none">
