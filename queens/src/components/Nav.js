@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Nav() {
     
@@ -30,27 +30,27 @@ function Nav() {
                                 <span className="icon-menu h3"></span> <span className="menu-text">Menu</span>
                                 </a></div>
                             <ul className="site-menu main-menu js-clone-nav d-none d-lg-none">
-                                        <NavLink to="/" className="nav-link">
+                                        <Link to="/" className="nav-link">
                                             Home
-                                        </NavLink>
-                                        <NavLink to="/about" className="nav-link">
+                                        </Link>
+                                        <Link to="/about" className="nav-link">
                                             About
-                                        </NavLink>
-                                        <NavLink to="/podcasts" className="nav-link">
+                                        </Link>
+                                        <Link to="/podcasts" className="nav-link">
                                             Podcasts
-                                        </NavLink>
-                                        <NavLink to="/realty" className="nav-link">
+                                        </Link>
+                                        <Link to="/realty" className="nav-link">
                                             Realty
-                                        </NavLink>
+                                        </Link>
                                         <Link to="/contact" className="nav-link">
                                             Contact
                                         </Link>
                                         {/* <Link to="/contact/submit" className="nav-link">
                                             Contact
                                         </Link> */}
-                                        <NavLink to="/login" className="nav-link">
+                                        <Link to="/login" className="nav-link">
                                             Admin
-                                        </NavLink>
+                                        </Link>
                                         {/* {(isAdmin) ? (
                                         <NavLink to="/dashboard" className="nav-link">
                                             Admin
