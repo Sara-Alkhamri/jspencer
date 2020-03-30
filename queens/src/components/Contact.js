@@ -97,7 +97,7 @@ const FormikContact = withFormik ({
     handleSubmit(values, {props, resetForm}) {
       console.log(props)
         axios
-            .post("https://jspencer-be.herokuapp.com/contact", values)
+            .post("https://jspencer-be.herokuapp.com/contact/submit", values)
             .then(res => {
               console.log(res.data)
                 // console.log("handelSubmit: then: response: ", response);
