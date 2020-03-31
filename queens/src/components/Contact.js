@@ -1,20 +1,20 @@
 import React from 'react';
 import axios from 'axios';
-import { Form, Field, withFormik } from 'formik';
+import { withFormik } from 'formik';
 import * as Yup from 'yup'
 
 const ContactForm = () => {
   return (
     <div className="site-section" id="contact-section">
       <div className="container">
-        <Form className="contact-form">
+        <form className="contact-form">
         <div className="section-title text-center mb-5">
             <span className="sub-title mb-2 d-block">Get In Touch</span>
             <h2 className="title text-primary">Share Your Thoughts</h2>
           </div>
           <div className="row mb-4">
             <div className="col-md-6 mb-4 mb-md-0">
-              <Field 
+              <input
               type="text" 
               name="firstname"
               className="form-control" 
@@ -22,7 +22,7 @@ const ContactForm = () => {
               />
             </div>
             <div className="col-md-6">
-              <Field 
+              <input 
               type="text" 
               name="lastName"
               className="form-control" 
@@ -33,7 +33,7 @@ const ContactForm = () => {
 
           <div className="row mb-4">
             <div className="col-12">
-              <Field 
+              <input 
               type="text" 
               name="email"
               className="form-control" 
@@ -57,7 +57,7 @@ const ContactForm = () => {
               <button type="submit" className="btn btn-primary btn-md">Send Message</button>
             </div>
           </div>
-        </Form>
+        </form>
       </div>
     </div>
   )
@@ -75,7 +75,7 @@ const FormikContactForm = withFormik({
 
   validationSchema: Yup.object().shape({
     firstName: Yup.string()
-      .required('Required Field'),
+      .required('Required textarea'),
       lastName: Yup.string()
       .required('Required Field'),
       email: Yup.string()
@@ -84,13 +84,12 @@ const FormikContactForm = withFormik({
       .required()
   }),
 
-  handleSubmit(values, {props, setStatus, resetForm}) {
+  handleSubmit(values, {props, resetForm}) {
     //console.log(values)
     axios
     .post('https://jspencer-be.herokuapp.com/contact/submit', values)
     .then(res => {
-        //console.log(res.data);
-        setStatus(res.data);
+        console.log(res.data);
         props.history.push('/contact-confirmation');
         resetForm();
     })
