@@ -75,7 +75,7 @@ const FormikContactForm = withFormik({
 
   validationSchema: Yup.object().shape({
     firstName: Yup.string()
-      .required('Required textarea'),
+      .required('Required Field'),
       lastName: Yup.string()
       .required('Required Field'),
       email: Yup.string()
@@ -87,7 +87,7 @@ const FormikContactForm = withFormik({
   handleSubmit(values, {props, resetForm}) {
     // console.log(props)
     axios
-    .post('https://jspencer-be.herokuapp.com/contact/submit', values)
+    .post('https://jspencer-be.herokuapp.com/contact/submit?', values)
     .then(res => {
         console.log(res.data);
         props.history.push('/contact-confirmation');

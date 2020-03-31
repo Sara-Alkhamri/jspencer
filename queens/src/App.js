@@ -28,10 +28,9 @@ function App() {
       <Nav />
       <Route exact path="/" component={Home}/>
       <Route exact path="/login" component={Login}/>
-      <Route path="/contact" component={Contact} />
       <PrivateRoute exact path="/dashboard" component={Dashboard}/>
       
-     
+      <Route exact path="/submit" component={Contact} />
       <Route exact path="/contact-confirmation" component={ContactConfirmation} />
       <Route path="/about" component={About}/> 
       <Route path="/podcasts" component={Podcast}/>

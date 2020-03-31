@@ -42,7 +42,7 @@ function Nav() {
                                         <Link to="/realty" className="nav-link">
                                             Realty
                                         </Link>
-                                        <Link to="/contact" className="nav-link">
+                                        <Link to="/submit" className="nav-link">
                                             Contact
                                         </Link>
                                         {/* <Link to="/contact/submit" className="nav-link">
