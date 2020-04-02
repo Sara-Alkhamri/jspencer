@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import { withFormik, Form } from 'formik';
+import { withFormik, Form, Field } from 'formik';
 import * as Yup from 'yup'
 
 const ContactForm = () => {
@@ -14,7 +14,7 @@ const ContactForm = () => {
           </div>
           <div className="row mb-4">
             <div className="col-md-6 mb-4 mb-md-0">
-              <input
+              <Field
               type="text" 
               name="firstname"
               className="form-control" 
@@ -22,7 +22,7 @@ const ContactForm = () => {
               />
             </div>
             <div className="col-md-6">
-              <input 
+              <Field 
               type="text" 
               name="lastName"
               className="form-control" 
@@ -33,7 +33,7 @@ const ContactForm = () => {
 
           <div className="row mb-4">
             <div className="col-12">
-              <input 
+              <Field 
               type="text" 
               name="email"
               className="form-control" 
@@ -44,7 +44,7 @@ const ContactForm = () => {
 
           <div className="row mb-4">
             <div className="col-12">
-              <textarea 
+              <textarea
               className="form-control" 
               name="message" 
               id="" cols="30" rows="10" 

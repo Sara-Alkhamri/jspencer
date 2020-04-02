@@ -11,7 +11,7 @@ import Realty from './components/Realty'
 import Contact from './Contact'
 import Footer from './components/Footer'
 import { Route } from 'react-router-dom';
-import ContactConfirmation from './components/admin/ContactConfirmation';
+import ContactConfirmation from './components/ContactConfirmation';
 
 function App() {
   return (
