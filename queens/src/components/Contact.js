@@ -1,13 +1,13 @@
 import React from 'react';
 import axios from 'axios';
-import { withFormik } from 'formik';
+import { withFormik, Form } from 'formik';
 import * as Yup from 'yup'
 
 const ContactForm = () => {
   return (
     <div className="site-section" id="contact-section">
       <div className="container">
-        <form className="contact-form">
+        <Form className="contact-form">
         <div className="section-title text-center mb-5">
             <span className="sub-title mb-2 d-block">Get In Touch</span>
             <h2 className="title text-primary">Share Your Thoughts</h2>
@@ -57,7 +57,7 @@ const ContactForm = () => {
               <button type="submit" className="btn btn-primary btn-md">Send Message</button>
             </div>
           </div>
-        </form>
+        </Form>
       </div>
     </div>
   )
@@ -85,7 +85,7 @@ const FormikContactForm = withFormik({
   }),
 
   handleSubmit(values, {props, resetForm}) {
-    // console.log(props)
+    console.log(props)
     axios
     .post('https://jspencer-be.herokuapp.com/contact/submit?', values)
     .then(res => {
