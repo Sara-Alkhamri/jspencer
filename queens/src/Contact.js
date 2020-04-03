@@ -3,7 +3,7 @@ import axios from 'axios';
 import { withFormik, Form, Field } from 'formik';
 import * as Yup from 'yup'
 
-const ContactForm = () => {
+function Contact() {
   return (
     <div className="site-section" id="contact-section">
       <div className="container">
@@ -14,7 +14,7 @@ const ContactForm = () => {
           </div>
           <div className="row mb-4">
             <div className="col-md-6 mb-4 mb-md-0">
-              <Field
+              <input
               type="text" 
               name="firstname"
               className="form-control" 
@@ -22,7 +22,7 @@ const ContactForm = () => {
               />
             </div>
             <div className="col-md-6">
-              <Field 
+              <input 
               type="text" 
               name="lastName"
               className="form-control" 
@@ -33,7 +33,7 @@ const ContactForm = () => {
 
           <div className="row mb-4">
             <div className="col-12">
-              <Field 
+              <input 
               type="text" 
               name="email"
               className="form-control" 
@@ -63,7 +63,7 @@ const ContactForm = () => {
   )
 }
 
-const FormikContactForm = withFormik({
+const FormikContact = withFormik({
   mapPropsToValues({firstName, lastName, email, message}) {
     return {
       firstName: firstName || '',
@@ -84,18 +84,18 @@ const FormikContactForm = withFormik({
       .required()
   }),
 
-  handleSubmit(values, {props, resetForm}) {
+  handleSubmit(values, {props, setStatus, resetForm}) {
     console.log(props)
     axios
-    .post('https://jspencer-be.herokuapp.com/contact/submit?', values)
+    .post('https://jspencer-be.herokuapp.com/contact/submit', values)
     .then(res => {
-        console.log(res.data);
+        setStatus(res.data);
         props.history.push('/contact-confirmation');
         resetForm();
     })
     .catch(error => console.log(error.response));
 }
 
-})(ContactForm)
+})(Contact)
 
-export default FormikContactForm;
+export default FormikContact;

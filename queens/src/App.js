@@ -31,7 +31,7 @@ function App() {
       <PrivateRoute exact path="/dashboard" component={Dashboard}/>
       
       <Route exact path="/submit" component={Contact} />
-      <Route exact path="/contact-confirmation" component={ContactConfirmation} />
+      <PrivateRoute exact path="/contact-confirmation" component={ContactConfirmation} />
       <Route path="/about" component={About}/> 
       <Route path="/podcasts" component={Podcast}/>
       <Route path="/realty" component={Realty}/>
