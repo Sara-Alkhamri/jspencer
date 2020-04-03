@@ -1,5 +1,6 @@
 import React from 'react';
 import { axiosWithAuth } from 'axios'
+import RealtyCard from '../RealtyCard'
 
 function AdminRealty() {
     const [adminAdd, setAdminAdd] = useState();
@@ -17,6 +18,15 @@ function AdminRealty() {
     useEffect(() => {
         AddHouse()
     }, [])
+
+    return(
+        <div className="site-section" id="contact-section">
+            <div className="container">
+                <RealtyCard key={adminAdd.id} id={adminAdd.id} image={adminAdd.image} post={AddHouse} />
+            </div>
+
+        </div>
+    )
     
 }
 
