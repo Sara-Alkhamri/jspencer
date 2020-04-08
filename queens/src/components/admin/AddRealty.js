@@ -8,9 +8,7 @@ const AdminRealty = () => {
 
     const getHouse = () => {
         axios
-            .get(
-                'https://jspencer-be.herokuapp.com/realty/'
-            )
+            .get('https://jspencer-be.herokuapp.com/realty/')
             .then(res => {
                 console.log(res, 'res')
                 setAdminAdd(res.data)
