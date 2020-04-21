@@ -3,7 +3,7 @@ import axios from 'axios';
 import { withFormik, Form, Field } from 'formik';
 import * as Yup from 'yup'
 
-function Contact() {
+function Contact({touched, errors}) {
   return (
     <div className="site-section" id="contact-section">
       <div className="container">
@@ -14,41 +14,46 @@ function Contact() {
           </div>
           <div className="row mb-4">
             <div className="col-md-6 mb-4 mb-md-0">
-              <input
-              type="text" 
+              <Field
+              type="firstName" 
               name="firstName"
               className="form-control" 
               placeholder="First name"
               />
+              {touched.firstName && errors.firstName && ( <p className="text-primary">{errors.firstName}</p>)}  
             </div>
             <div className="col-md-6">
-              <input 
-              type="text" 
+              <Field 
+              type="lastName" 
               name="lastName"
               className="form-control" 
               placeholder="Last name"
               />
+              {touched.lastName && errors.lastName && ( <p className="text-primary">{errors.lastName}</p>)}  
             </div>
           </div>
 
           <div className="row mb-4">
             <div className="col-12">
-              <input 
-              type="text" 
+              <Field 
+              type="email" 
               name="email"
               className="form-control" 
               placeholder="Email"
               />
+              {touched.email && errors.email && ( <p className="text-primary">{errors.email}</p>)}    
             </div>
           </div>
 
           <div className="row mb-4">
             <div className="col-12">
               <textarea
-              className="form-control" 
+              className="form-control"
+              type="message" 
               name="message" 
               id="" cols="30" rows="10" 
               placeholder="Message">
+              {touched.message && errors.message && ( <p className="text-primary">{errors.message}</p>)}    
               </textarea>
             </div>
           </div>
