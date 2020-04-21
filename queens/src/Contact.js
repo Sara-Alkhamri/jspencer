@@ -16,7 +16,7 @@ function Contact() {
             <div className="col-md-6 mb-4 mb-md-0">
               <input
               type="text" 
-              name="firstname"
+              name="firstName"
               className="form-control" 
               placeholder="First name"
               />
@@ -80,7 +80,7 @@ const FormikContact = withFormik({
       .required('Required Field'),
       email: Yup.string()
       .required('Required Field'),
-      password: Yup.string()
+      message: Yup.string()
       .required()
   }),
 
