@@ -8,10 +8,10 @@ import PrivateRoute from './components/admin/PrivateRoute'
 import About from './components/About'
 import Podcast from './components/Podcast'
 import Realty from './components/Realty'
-import Contact from './Contact'
+import Contact from './components/admin/Contact'
 import Footer from './components/Footer'
 import { Route } from 'react-router-dom';
-import ContactConfirmation from './components/ContactConfirmation';
+import ContactConfirmation from './components/admin/ContactConfirmation';
 
 function App() {
   return (
