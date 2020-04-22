@@ -59,7 +59,7 @@ function Contact({touched, errors}) {
           </div>
           <div className="row">
             <div className="col-12">
-              <button type="submit" className="btn btn-primary btn-md">Send Message</button>
+            <button type="submit" className="btn btn-primary btn-md">Send Message</button>
             </div>
           </div>
         </Form>
@@ -79,7 +79,7 @@ const FormikContact = withFormik({
   },
 
   validationSchema: Yup.object().shape({
-    firstName: Yup.string()
+      firstName: Yup.string()
       .required('Required Field'),
       lastName: Yup.string()
       .required('Required Field'),
@@ -94,11 +94,12 @@ const FormikContact = withFormik({
     axios
     .post('https://jspencer-be.herokuapp.com/contact/submit', values)
     .then(res => {
+      console.log(res.data)
         setStatus(res.data);
         props.history.push('/contact-confirmation');
         resetForm();
     })
-    .catch(error => console.log(error.response));
+    .catch(err => console.log(err.res));
 }
 
 })(Contact)

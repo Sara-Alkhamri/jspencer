@@ -69,4 +69,4 @@ const FormikLogin = withFormik({
   })(Login);
 //   console.log("This is the HOC", FormikLogin);
   
-  export default FormikLogin
+  export default FormikLogin;
