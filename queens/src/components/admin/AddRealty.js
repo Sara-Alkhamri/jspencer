@@ -40,7 +40,6 @@ const AdminRealty = () => {
             <div className="container">
             <input type="file" accept="image/*" multiple={false} />
                 <RealtyCard key={adminAdd.id} id={adminAdd.id} image={adminAdd.image} post={AddHouse} /> 
-                
             </div>
             
 
